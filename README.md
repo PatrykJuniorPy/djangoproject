@@ -1,1 +1,1 @@
-# This is a counter text app
+# This is a bootstap Onepage with django
