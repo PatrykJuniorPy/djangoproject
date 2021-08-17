@@ -103,6 +103,9 @@
             <div class="icon"><i class="ri-stack-line"></i></div>
             <h4 class="title"><a href="">{{feature.name}}</a></h4>
             <p class="description">{{feature.details}}</p>
+            {% if feature.name == "Easy"%}
+            <p>This feature is easy to handle</p>
+            {% endif %}
           </div>
         </div>
         {% endfor %}
