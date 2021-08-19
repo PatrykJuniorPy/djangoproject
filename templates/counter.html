@@ -1,2 +1,4 @@
- <h1>amount of text {{amount}}</h1>
+ {% for post in posts%}
+ <h1><a href="{% url 'post' post %}">Post</h1>
+ {%endfor%} 
 

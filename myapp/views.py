@@ -62,6 +62,8 @@ def logout(request):
 
 
 def counter(request):
-    text = request.POST['text']
-    amountOftext = len(text.split())
-    return render(request, 'counter.html', {'amount': amountOftext})
+    posts = [1, 2, 3, 4, 5, 'pat', 'syl', 'elena']
+    return render(request, 'counter.html', {'posts': posts})
+
+def post(request, pk):
+    return render(request  , 'post.html', {'pk': pk})
